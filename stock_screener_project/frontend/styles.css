@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    margin: 2%; /* Add gap from the top of the page */
+}
+
+.filter-container {
+    width: 20%;
+    position: fixed;
+    top: 50px; /* Move the filter container down */
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-right: 1px solid #ccc;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid transparent;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 10px;
+    font-size: 16px; /* Increase font size */
+}
+
+.filters input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Increase font size */
+}
+
+.filters select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Increase font size */
+}
+
+.filters button {
+    padding: 10px 20px; /* Increase padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.filters button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+
+.stocks-container {
+    width: 70%;
+    padding: 20px;
+    margin-left: auto; /* Align the stocks container to the right */
+    margin-top: 30px; /* Move the stocks container down by the same amount */
+    margin-right: 2%;
+    border: 1px solid #ccc; /* Add border around the stocks container */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#stockTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#stockTable th,
+#stockTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#stockTable th {
+    background-color: #007bff;
+    color: white;
+}
+
+#stockTable tbody tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+#stockTable tbody tr:hover {
+    background-color: #f0f0f0;
+}
